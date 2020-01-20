@@ -1,0 +1,276 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="600">
+    <title>丰付统一平台大数据统计</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery.liMarquee.js"></script>
+    <script type="text/javascript" src="js/jquery.cxselect.min.js"></script>
+    <link rel="stylesheet" href="css/comon0.css">
+</head>
+<body>
+    <div style="background:#000d4a url(images/bg.jpg) center top;">
+        <div class="loading">
+            <div class="loadbox"> <img src="images/loading.gif"> 页面加载中... </div>
+        </div>
+        <div class="back"></div>
+        <div class="head">
+            <div class="weather"><span id="showTime"></span></div>
+            <h1>丰付统一平台大数据统计</h1>
+
+        </div>
+        <script>
+            var t = null;
+            t = setTimeout(time, 1000);/*開始运行*/
+            function time() {
+                clearTimeout(t);/*清除定时器*/
+                dt = new Date();
+                var y = dt.getFullYear();
+                var mt = dt.getMonth() + 1;
+                var day = dt.getDate();
+                var h = dt.getHours();
+                var m = dt.getMinutes();
+                var s = dt.getSeconds();
+                document.getElementById("showTime").innerHTML = y + "年" + mt + "月" + day + "日" + h + "时" + m + "分" + s + "秒";
+                t = setTimeout(time, 1000); 
+            }
+
+        </script>
+        <div class="mainbox">
+            <ul class="clearfix">
+                <li>
+                    <div class="boxall" style="height:400px;">
+                        <div class="alltitle">交易排行榜</div>
+                        <div class="navboxall">
+                             <table class="table1" width="100%" border="0" cellspacing="0" cellpadding="0" id="table_2">
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" nowrap="nowrap" >排名</th>
+                                        <th scope="col" align="center">商户名称</th>
+                                        <!-- <th scope="col">数量</th> -->
+                                        <th scope="col">交易额(元)</th>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><span>1</span></td>
+                                        <td>教育</td>
+                                        <td>913423万<br></td>
+<!--                                         <td>80%<br></td>
+ -->                                    </tr>
+                                    <tr>
+                                        <td><span>2</span></td>
+                                        <td>零售</td>
+                                        <td>323823万</td>
+<!--                                         <td>21%</td>
+ -->                                    </tr>
+
+                                    <tr>
+                                        <td><span>3</span></td>
+                                        <td>商超</td>
+                                        <td>1240253万</td>
+<!--                                         <td>12%</td>
+ -->                                    </tr>
+                                    <tr>
+                                        <td><span>4</span></td>
+                                        <td>餐饮</td>
+                                        <td>1.2亿</td>
+<!--                                         <td>39%</td>
+ -->                                    </tr>
+                                    <tr>
+                                        <td><span>5</span></td>
+                                        <td>其他</td>
+                                        <td>9423万</td>
+<!--                                         <td>9%</td>
+ -->                                    </tr>
+   <tr>
+                                        <td><span>6</span></td>
+                                        <td>其他</td>
+                                        <td>9423万</td>
+<!--                                         <td>9%</td>
+ -->                                    </tr>
+   <tr>
+                                        <td><span>7</span></td>
+                                        <td>其他</td>
+                                        <td>9423万</td>
+<!--                                         <td>9%</td>
+ -->                                    </tr>
+   <tr>
+                                        <td><span>8</span></td>
+                                        <td>其他</td>
+                                        <td>9423万</td>
+<!--                                         <td>9%</td>
+ -->                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="boxall" style="height:260px;">
+                        <div class="alltitle">交易实时监控</div>
+                        <div class="navboxall">
+                            <div class="wraptit">
+                                <span>订单号</span><span>金额</span><span>类型</span><span>时间</span>
+                            </div>
+                            <div class="wrap">
+                                <ul id="ulList">
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="boxall" style="height:260px;">
+                        <div class="alltitle">支付占比</div>
+
+                        <div class="navboxall" id="echart1"></div>
+                    </div>
+                </li>
+                <li>
+
+                    <div class="boxall" style="height:230px">
+                        <div class="clearfix navboxall" style="height: 100%">
+                            <div class="pulll_left num">
+                                <div class="numbt">当日交易额<span>(单位：元)</span></div>
+                                <div id="d2" class="numtxt">12233039.19</div>
+                            </div>
+                            <div class="pulll_right zhibiao">
+                                <div class="zb1"><span>支付宝</span><div id="zb1"></div></div>
+                                <div class="zb2"><span>微信</span><div id="zb2"></div></div>
+                               <!--  <div class="zb3"><span>银行卡</span><div id="zb3"></div></div>
+                                <div class="zb4"><span>银联</span><div id="zb4"></div></div> -->
+                             </div>
+                        </div>
+                    </div>
+                    <div class="boxall" style="height:350px">
+                        <div class="alltitle">交易量(百万元)</div>
+                        <div class="navboxall" id="echart4"></div>
+
+                    </div>
+                    <div class="boxall" style="height:340px">
+                        <div class="alltitle">交易趋势(亿元)</div>
+                        <div class="navboxall" id="echart3"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="boxall" style="height:300px">
+                        <div class="alltitle">行业排行</div>
+                        <div class="navboxall">
+                            <table class="table1" width="100%" border="0" cellspacing="0" cellpadding="0" id="table_1">
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">排名</th>
+                                        <th scope="col" align="center">行业</th>
+                                        <!-- <th scope="col">数量</th> -->
+                                        <th scope="col">交易量(元)</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span>1</span></td>
+                                        <td>教育</td>
+                                        <td>913423万<br></td>
+<!--                                         <td>80%<br></td>
+ -->                                    </tr>
+                                    <tr>
+                                        <td><span>2</span></td>
+                                        <td>零售</td>
+                                        <td>323823万</td>
+<!--                                         <td>21%</td>
+ -->                                    </tr>
+
+                                    <tr>
+                                        <td><span>3</span></td>
+                                        <td>商超</td>
+                                        <td>1240253万</td>
+<!--                                         <td>12%</td>
+ -->                                    </tr>
+                                    <tr>
+                                        <td><span>4</span></td>
+                                        <td>餐饮</td>
+                                        <td>1.2亿</td>
+<!--                                         <td>39%</td>
+ -->                                    </tr>
+                                    <tr>
+                                        <td><span>5</span></td>
+                                        <td>其他</td>
+                                        <td>9423万</td>
+<!--                                         <td>9%</td>
+ -->                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="boxall" style="height: 300px">
+                        <div class="alltitle">代理排行</div>
+                        <div class="navboxall">
+                            <table class="table1" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">排名</th>
+                                        <th scope="col">地区</th>
+                                        <th scope="col">数量</th>
+                                        <th scope="col">增长率</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span>1</span></td>
+                                        <td>宁波</td>
+                                        <td>43423万<br></td>
+                                        <td>70%<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>2</span></td>
+                                        <td>嘉兴</td>
+                                        <td>23823万</td>
+                                        <td>21%</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><span>3</span></td>
+                                        <td>金华</td>
+                                        <td>340253万</td>
+                                        <td>12%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>4</span></td>
+                                        <td>台州</td>
+                                        <td>2.2亿</td>
+                                        <td>39%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>5</span></td>
+                                        <td>湖州</td>
+                                        <td>3423万</td>
+                                        <td>9%</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <div class="boxall" style="height:320px">
+                        <div class="alltitle">行业占比</div>
+                        <div class="navboxall" id="echart2"></div>
+                    </div>
+
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $('.wrap,.adduser').liMarquee({
+                direction: 'down',/*身上滚动*/
+                runshort: false,/*内容不足时不滚动*/
+                scrollamount: 30/*速度*/
+            });
+        });
+
+    </script>
+</body>
+</html>
