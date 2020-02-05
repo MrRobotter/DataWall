@@ -550,25 +550,30 @@ function echarts_4() {
         var myChart = echarts.init(document.getElementById('echart4'));
         var dayDatas=[
      
-      {"date":"1","money":55.80,"rate":80},//14
-      {"date":"2","money":68.79,"rate":80},//15
-      {"date":"3","money":67.02,"rate":80},//15
-      {"date":"4","money":57.67,"rate":80},//15
-      {"date":"5","money":52.80,"rate":80},//15
-      {"date":"6","money":56.85,"rate":80},//2
-      {"date":"7","money":66.39,"rate":80},//2
-      {"date":"8","money":73.08,"rate":80},//6
-      {"date":"9","money":76.88,"rate":82},//5
-      {"date":"10","money":94.86,"rate":90},//6
-      {"date":"11","money":58.99,"rate":80},//7
-      {"date":"12","money":67.02,"rate":80},//8
-      {"date":"13","money":69.98,"rate":80},//9
-      {"date":"14","money":68.89,"rate":80},//10
-      {"date":"30","money":67.59,"rate":80},//13
-      {"date":"16","money":63.16,"rate":80},//11
+      
+      
+     
+      
+      
       {"date":"17","money":66.82,"rate":80},//11
       {"date":"18","money":75.34,"rate":85},//10
-      {"date":"19","money":65.12,"rate":80},//14
+      {"date":"19","money":65.13,"rate":80},//14
+      {"date":"20","money":77.94,"rate":80},//14
+      {"date":"21","money":69.73,"rate":80},//15
+      {"date":"22","money":61.01,"rate":80},//15
+      {"date":"23","money":49.33,"rate":80},//15
+      {"date":"24","money":15.68,"rate":80},//15
+      {"date":"25","money":3.56,"rate":90},//6
+      {"date":"26","money":2.94,"rate":80},//2
+      {"date":"27","money":3.23,"rate":80},//2
+      {"date":"28","money":3.24,"rate":80},//6
+      {"date":"29","money":2.98,"rate":82},//5
+      {"date":"30","money":3.06,"rate":80},//7
+      {"date":"31","money":3.77,"rate":80},//8
+      {"date":"1","money":5.08,"rate":80},//9
+      {"date":"2","money":22.03,"rate":80},//10
+      {"date":"3","money":16.48,"rate":80},//13
+      {"date":"4","money":6.86,"rate":80},//11
       ];
 
         var dates=[];
