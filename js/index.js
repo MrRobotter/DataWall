@@ -550,7 +550,6 @@ function echarts_4() {
         var myChart = echarts.init(document.getElementById('echart4'));
         var dayDatas=[
      
-      {"date":"19","money":65.13,"rate":80},//14
       {"date":"20","money":77.94,"rate":80},//14
       {"date":"21","money":69.73,"rate":80},//15
       {"date":"22","money":61.01,"rate":80},//15
@@ -569,6 +568,7 @@ function echarts_4() {
       {"date":"4","money":6.86,"rate":9},//11
       {"date":"5","money":5.73,"rate":8},//11
       {"date":"6","money":5.63,"rate":8},//10
+      {"date":"7","money":3.70,"rate":6},//14
       ];
 
         var dates=[];
