@@ -567,7 +567,7 @@ function echarts_4() {
       {"date":"9","money":5.46,"rate":8},//15
       {"date":"10","money":5.78,"rate":8},//15
       {"date":"11","money":5.68,"rate":8},//15
-      {"date":"24","money":6.16,"rate":12},//15
+      {"date":"22","money":6.16,"rate":10},//15
       ];
 
         var dates=[];
