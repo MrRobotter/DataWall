@@ -549,35 +549,35 @@ function echarts_4() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('echart4'));
         var dayDatas=[
+    
      
       
-      
      
-      {"date":"1","money":5.08,"rate":10},//9
-      {"date":"2","money":22.03,"rate":20},//10
-      {"date":"3","money":16.48,"rate":18},//13
-      {"date":"4","money":6.86,"rate":9},//11
-      {"date":"5","money":5.73,"rate":8},//11
-      {"date":"6","money":5.63,"rate":8},//10
-      {"date":"7","money":3.70,"rate":6},//14
-      {"date":"8","money":3.98,"rate":6},//14
-      {"date":"9","money":5.46,"rate":8},//15
-      {"date":"10","money":5.78,"rate":8},//15
-      {"date":"11","money":5.68,"rate":8},//15
-      {"date":"12","money":6.16,"rate":10},//15
-      {"date":"13","money":6.69,"rate":12},//6
-      {"date":"14","money":7.58,"rate":18},//2
-      {"date":"15","money":6.60,"rate":10},//2
-      {"date":"16","money":6.37,"rate":10},//6
-      {"date":"17","money":14.16,"rate":14},//
-      {"date":"18","money":15.32,"rate":15},//7
-      {"date":"19","money":16.25,"rate":16},//7
       {"date":"19","money":18.44,"rate":18},//7
       {"date":"21","money":14.20,"rate":14},//8
       {"date":"22","money":12.93,"rate":13},//8
       {"date":"23","money":16.15,"rate":16},//8
       {"date":"24","money":23.70,"rate":14},//8
       {"date":"25","money":19.71,"rate":20},//8
+      {"date":"26","money":19.68,"rate":20},//6
+      {"date":"27","money":26.29,"rate":26},//
+      {"date":"28","money":31.88,"rate":32},//7
+      {"date":"29","money":31.45,"rate":31},//7
+      {"date":"1","money":22.81,"rate":23},//2
+      {"date":"2","money":34.39,"rate":34},//2
+      {"date":"3","money":24.76,"rate":25},//15
+      {"date":"4","money":22.89,"rate":23},//15
+      {"date":"5","money":43.49,"rate":43},//15
+      {"date":"6","money":31.71,"rate":32},//6
+      {"date":"7","money":24.93,"rate":25},//9
+      {"date":"8","money":32.87,"rate":33},//10
+      {"date":"9","money":40.54,"rate":41},//13
+      {"date":"10","money":43.50,"rate":45},//11
+      {"date":"11","money":34.81,"rate":35},//11
+      {"date":"12","money":27.81,"rate":28},//10
+      {"date":"13","money":33.34,"rate":33},//14
+      {"date":"14","money":33.03,"rate":33},//14
+      {"date":"15","money":31.99,"rate":32},//15
 
       ];
 
