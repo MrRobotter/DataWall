@@ -549,7 +549,6 @@ function echarts_4() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('echart4'));
         var dayDatas=[
-      {"date":"28","money":31.88,"rate":32},//7
       {"date":"29","money":31.45,"rate":31},//7
       {"date":"1","money":22.81,"rate":23},//2
       {"date":"2","money":34.39,"rate":34},//2
@@ -574,6 +573,7 @@ function echarts_4() {
       {"date":"21","money":46.29,"rate":46},//8
       {"date":"22","money":34.94,"rate":35},//6
       {"date":"23","money":41.19,"rate":41},//
+      {"date":"24","money":43.45,"rate":43},//7
       ];
 
         var dates=[];
@@ -582,7 +582,6 @@ function echarts_4() {
 
         for(var i in dayDatas){
           var dayData=dayDatas[i];
-
           dates.push(dayData.date);
           moneys.push(dayData.money);
           rates.push(dayData.rate);
@@ -865,7 +864,7 @@ option = {
         data: [
         {
             value: v1,
-            name: '女消费',
+            name: '微信消费',
             label: {
                 normal: {
                     formatter: v1 +'',
@@ -878,7 +877,7 @@ option = {
         }, 
         {
             value: 100-v1,
-            name: '男消费',
+            name: '支付宝消费',
             label: {
                 normal: {
                  formatter : function (params){
@@ -910,8 +909,8 @@ option = {
 function zb2(percentage) {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('zb2'));
-    var v1=percentage//男消费
-		var v2=percentage//女消费
+    var v1=percentage//微信消费
+		var v2=percentage//支付宝消费
 		var v3=100//总消费 
       option = {
 	
@@ -927,7 +926,7 @@ function zb2(percentage) {
         },
         data: [{
             value: v1,
-            name: '男消费',
+            name: '微信消费',
             label: {
                 normal: {
                     formatter: v1 +'',
@@ -939,7 +938,7 @@ function zb2(percentage) {
             }
         }, {
             value: 100-v2,
-            name: '女消费',
+            name: '支付宝消费',
             label: {
                 normal: {
                  formatter : function (params){
@@ -970,8 +969,8 @@ function zb2(percentage) {
 function zb3() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('zb3'));
-		var v1=298//男消费
-		var v2=523//女消费
+		var v1=298//微信消费
+		var v2=523//支付宝消费
 		var v3=v1+v2//总消费 
 option = {	
     series: [{
@@ -986,7 +985,7 @@ option = {
         },
         data: [{
             value: v2,
-            name: '女消费',
+            name: '微信消费',
             label: {
                 normal: {
                     formatter: v2 +'',
@@ -998,7 +997,7 @@ option = {
             }
         }, {
             value: v1,
-            name: '男消费',
+            name: '支付宝消费',
             label: {
                 normal: {
                  formatter : function (params){
