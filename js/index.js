@@ -573,7 +573,7 @@ function echarts_4() {
       {"date":"17","money":45.49,"rate":45},//7
       {"date":"18","money":65.67,"rate":66},//7
       {"date":"19","money":44.95,"rate":49},//2
-      {"date":"27","money":78.27,"rate":78},//2
+      {"date":"20","money":78.27,"rate":78},//2
       ];
 
         var dates=[];
