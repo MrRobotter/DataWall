@@ -544,7 +544,7 @@ function echarts_3() {
             myChart.resize();
         });
     }
-    //月交易量
+    //每天的交易量 
 function echarts_4() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('echart4'));
@@ -568,13 +568,13 @@ function echarts_4() {
       {"date":"27","money":67.99,"rate":68},//11
       {"date":"28","money":80.22,"rate":80},//11
       {"date":"29","money":108.84,"rate":100},//10
-      {"date":"30","money":68.08,"rate":68},//14
-      {"date":"1","money":52.62,"rate":53},//14
-      {"date":"2","money":63.29,"rate":63},//15
-      {"date":"3","money":68.28,"rate":68},//7
-      {"date":"4","money":49.46,"rate":50},//13
-      {"date":"5","money":57.83,"rate":58},//8
-      {"date":"6","money":51.93,"rate":52},//8
+      {"date":"30","money":111.36,"rate":111},//14
+      {"date":"1","money":77.99,"rate":78},//14
+      {"date":"2","money":42.04,"rate":42},//15
+      {"date":"3","money":40.90,"rate":41},//7
+      {"date":"4","money":43.19,"rate":43},//13
+      {"date":"5","money":47.32,"rate":47},//8
+      {"date":"6","money":64.63,"rate":65},//8
       ];
 
         var dates=[];
