@@ -550,11 +550,7 @@ function echarts_4() {
         var myChart = echarts.init(document.getElementById('echart4'));
         var dayDatas=[
 
-      {"date":"18","money":72.90,"rate":73},//6
-      {"date":"19","money":76.43,"rate":76},//9
-      {"date":"20","money":77.29,"rate":77},//10
-      {"date":"21","money":94.92,"rate":95},//11
-      {"date":"22","money":85.52,"rate":86},//11
+     
       {"date":"23","money":76.84,"rate":77},//11
       {"date":"24","money":75.30,"rate":75},//10
       {"date":"25","money":115.61,"rate":100},//14
@@ -574,7 +570,14 @@ function echarts_4() {
       {"date":"8","money":80.96,"rate":81},//2
       {"date":"9","money":96.28,"rate":96},//2
       {"date":"10","money":87.93,"rate":88},//15
-      {"date":"11","money":84.99,"rate":85},//15
+      {"date":"11","money":85.52,"rate":85},//15
+      {"date":"12","money":82.59,"rate":83},//6
+      {"date":"13","money":112.83,"rate":100},//9
+      {"date":"14","money":100.57,"rate":91},//11
+      {"date":"15","money":91.14,"rate":91},//10
+      {"date":"16","money":150.77,"rate":100},//11
+      {"date":"17","money":167.22,"rate":100},//6
+  
       ];
 
         var dates=[];
