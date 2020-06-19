@@ -549,9 +549,6 @@ function echarts_4() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('echart4'));
         var dayDatas=[
-
-     
-      {"date":"23","money":76.84,"rate":77},//11
       {"date":"24","money":75.30,"rate":75},//10
       {"date":"25","money":115.61,"rate":100},//14
       {"date":"26","money":112.93,"rate":100},//14
@@ -577,6 +574,7 @@ function echarts_4() {
       {"date":"15","money":91.14,"rate":91},//10
       {"date":"16","money":150.77,"rate":100},//11
       {"date":"17","money":167.22,"rate":100},//6
+      {"date":"18","money":87.25,"rate":87},//11
   
       ];
 
