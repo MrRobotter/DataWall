@@ -549,15 +549,8 @@ function echarts_4() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('echart4'));
         var dayDatas=[
-   
-      {"date":"3","money":51.39,"rate":51},//8
-      {"date":"4","money":62.49,"rate":62},//6
-      {"date":"5","money":73.69,"rate":74},//
-      {"date":"6","money":71.09,"rate":71},//7
-      {"date":"7","money":71.99,"rate":72},//7
-      {"date":"8","money":80.96,"rate":81},//2
-      {"date":"9","money":96.28,"rate":96},//2
-      {"date":"10","money":87.93,"rate":88},//15
+  
+     
       {"date":"11","money":85.52,"rate":85},//15
       {"date":"12","money":82.59,"rate":83},//6
       {"date":"13","money":112.83,"rate":100},//9
@@ -575,7 +568,14 @@ function echarts_4() {
       {"date":"25","money":87.75,"rate":88},//8
       {"date":"26","money":63.64,"rate":64},//8
       {"date":"27","money":57.78,"rate":58},//8
-      {"date":"28","money":112.58,"rate":100},//8
+      {"date":"28","money":113.78,"rate":100},//8
+      {"date":"29","money":134.08,"rate":100},//8
+      {"date":"30","money":120.50,"rate":100},//6
+      {"date":"1","money":60.23,"rate":60},//
+      {"date":"2","money":59.40,"rate":59},//7
+      {"date":"3","money":72.88,"rate":72},//7
+      {"date":"4","money":67.84,"rate":68},//2
+      {"date":"5","money":62.24,"rate":62},//2
       ];
 
         var dates=[];
