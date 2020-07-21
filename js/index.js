@@ -575,7 +575,6 @@ function echarts_4() {
       {"date":"19","money":122.32,"rate":100},//8
       {"date":"20","money":124.01,"rate":100},//8
       ];
-RP0000000001
         var dates=[];
         var moneys=[];
         var rates=[];
