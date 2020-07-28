@@ -572,8 +572,9 @@ function echarts_4() {
       {"date":"22","money":81.50,"rate":82},//8
       {"date":"23","money":79.04,"rate":79},//8
       {"date":"24","money":85.34,"rate":85},//6
-      {"date":"25","money":59.40,"rate":59},//7
-      {"date":"26","money":59.40,"rate":59},//7
+      {"date":"25","money":88.59,"rate":89},//7
+      {"date":"26","money":66.51,"rate":66},//7
+      {"date":"27","money":76.85,"rate":77},//7
       ];
 
         var dates=[];
