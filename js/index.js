@@ -1,4 +1,4 @@
-﻿ $(window).load(function(){  
+ $(window).load(function(){  
              $(".loading").fadeOut()
             })  
 $(function () {
@@ -549,15 +549,7 @@ function echarts_4() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('echart4'));
         var dayDatas=[
-     
-      {"date":"9","money":56.99,"rate":57},//11
-      {"date":"10","money":80.81,"rate":82},//11
-      {"date":"11","money":64.65,"rate":65},//6
-      {"date":"12","money":70.05,"rate":70},//11
-      {"date":"13","money":71.42,"rate":71},//10
-      {"date":"14","money":71.05,"rate":71},//14
-      {"date":"15","money":76.02,"rate":76},//14
-      {"date":"16","money":69.44,"rate":69},//15
+    
       {"date":"17","money":89.70,"rate":89},//7
       {"date":"18","money":105.17,"rate":100},//13
       {"date":"19","money":122.32,"rate":100},//8
@@ -576,6 +568,14 @@ function echarts_4() {
       {"date":"1","money":48.70,"rate":49},//15
       {"date":"2","money":52.34,"rate":52},//6
       {"date":"3","money":97.26,"rate":97},//9
+      {"date":"4","money":127.86,"rate":100},//
+      {"date":"5","money":64.65,"rate":65},//6
+      {"date":"6","money":68.18,"rate":68},//11
+      {"date":"7","money":69.30,"rate":69},//10
+      {"date":"8","money":62.76,"rate":63},//
+      {"date":"9","money":60.86,"rate":61},//14
+      {"date":"10","money":106.19,"rate":100},//14
+      {"date":"11","money":170.20,"rate":100},//15
       ];
 
         var dates=[];
