@@ -550,33 +550,39 @@ function echarts_4() {
         var myChart = echarts.init(document.getElementById('echart4'));
         var dayDatas=[
     
-      {"date":"17","money":89.70,"rate":89},//7
-      {"date":"18","money":105.17,"rate":100},//13
-      {"date":"19","money":122.32,"rate":100},//8
-      {"date":"20","money":124.01,"rate":100},//8
-      {"date":"21","money":94.18,"rate":94},//8
-      {"date":"22","money":81.50,"rate":82},//8
-      {"date":"23","money":79.04,"rate":79},//8
-      {"date":"24","money":85.34,"rate":85},//6
-      {"date":"25","money":88.59,"rate":89},//7
-      {"date":"26","money":66.51,"rate":66},//7
-      {"date":"27","money":76.85,"rate":77},//7
-      {"date":"28","money":79.75,"rate":80},//7
-      {"date":"29","money":83.65,"rate":83},//2
-      {"date":"30","money":83.79,"rate":83},//2
-      {"date":"31","money":110.23,"rate":100},//2
-      {"date":"1","money":48.70,"rate":49},//15
-      {"date":"2","money":52.34,"rate":52},//6
-      {"date":"3","money":97.26,"rate":97},//9
-      {"date":"4","money":127.86,"rate":100},//
-      {"date":"5","money":64.65,"rate":65},//6
-      {"date":"6","money":68.18,"rate":68},//11
-      {"date":"7","money":69.30,"rate":69},//10
-      {"date":"8","money":62.76,"rate":63},//
-      {"date":"9","money":60.86,"rate":61},//14
-      {"date":"10","money":106.19,"rate":100},//14
-      {"date":"11","money":170.20,"rate":100},//15
-      ];
+
+{"date":"17","money":79.46,"rate":79},//8
+{"date":"18","money":73.40,"rate":73},//8
+{"date":"19","money":68.13,"rate":68},//8
+{"date":"20","money":74.09,"rate":74},//8
+{"date":"21","money":77.32,"rate":77},//8
+{"date":"22","money":66.52,"rate":66},//8
+{"date":"23","money":68.10,"rate":68},//8
+{"date":"24","money":77.30,"rate":77},//8
+{"date":"25","money":98.74,"rate":98},//8
+{"date":"26","money":69.48,"rate":69},
+{"date":"27","money":75.30,"rate":75},  
+{"date":"28","money":109.63,"rate":100},
+{"date":"29","money":70.37,"rate":70},    
+{"date":"30","money":65.14,"rate":65},  
+{"data":"31","money":85.54,"rate":86}, 
+{"date":"1","money":60.78,"rate":61},//15
+{"date":"2","money":50.42,"rate":50},//6
+{"date":"3","money":55.83,"rate":56},//9
+{"date":"4","money":66.76,"rate":67},//
+{"date":"5","money":57.87,"rate":58},//6
+{"date":"6","money":62.20,"rate":62},//11
+{"date":"7","money":70.44,"rate":70},//10
+{"date":"8","money":52.66,"rate":53},//
+{"date":"9","money":68.54,"rate":69},//14
+{"date":"10","money":77.39,"rate":77},//14
+{"date":"11","money":72.83,"rate":73},//15
+{"date":"12","money":67.21,"rate":67},//7
+{"date":"13","money":58.72,"rate":59},//13
+{"date":"14","money":70.48,"rate":70},//8
+{"date":"15","money":84.18,"rate":84},//8
+{"date":"16","money":69.05,"rate":69},//8  
+  ];
 
         var dates=[];
         var moneys=[];
